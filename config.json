@@ -1,0 +1,22 @@
+{
+    "notebooks": [
+        {
+            "id": "ndvi_calculation",
+            "file": "./notebooks/example/ndvi_calculation.ipynb",
+            "label": "NDVI Calculation Notebook",
+            "description": "Performs NDVI calculation on the selected COG asset."
+        },
+        {
+            "id": "cog_preview",
+            "file": "./notebooks/example/cog_preview.ipynb",
+            "label": "COG Preview Notebook",
+            "description": "Previews the selected COG asset."
+        },
+        {
+            "id": "stats_look",
+            "file": "./notebooks/example/stats_look.ipynb",
+            "label": "View stats",
+            "description": "Look at some stats"
+        }
+    ]
+}
