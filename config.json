@@ -10,7 +10,11 @@
             ],
             "minItems": 1,
             "maxItems": 1,
-            "markdown_file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/ndvi_calculation.md"
+            "markdown_file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/ndvi_calculation.md",
+            "inputSpec": {
+                "cog_url": "singleUrl",
+                "bbox": "bbox"
+            }
         },
         {
             "id": "cog_preview",
@@ -23,7 +27,10 @@
             ],
             "minItems": 1,
             "maxItems": 1,
-            "markdown_file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/cog_preview.md"
+            "markdown_file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/cog_preview.md",
+            "inputSpec": {
+                "cog_url": "singleUrl"
+            }
         },
         {
             "id": "stats_look",
@@ -36,7 +43,10 @@
             ],
             "minItems": 1,
             "maxItems": 1,
-            "markdown_file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/stats_look.md"
+            "markdown_file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/stats_look.md",
+            "inputSpec": {
+                "cog_url": "singleUrl"
+            }
         },
         {
             "id": "mean_value_calculation",
@@ -49,7 +59,10 @@
             ],
             "minItems": 1,
             "maxItems": 10,
-            "markdown_file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/mean_value_calculation.md"
+            "markdown_file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/mean_value_calculation.md",
+            "inputSpec": {
+                "cogs": "urlList"
+            }
         }
     ]
 }
