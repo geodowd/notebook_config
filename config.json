@@ -9,7 +9,8 @@
                 "sentinel2_ard"
             ],
             "minItems": 1,
-            "maxItems": 1
+            "maxItems": 1,
+            "markdown_file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/ndvi_calculation.md"
         },
         {
             "id": "cog_preview",
@@ -21,7 +22,8 @@
                 "sentinel1_ard"
             ],
             "minItems": 1,
-            "maxItems": 1
+            "maxItems": 1,
+            "markdown_file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/cog_preview.md"
         },
         {
             "id": "stats_look",
@@ -33,7 +35,8 @@
                 "sentinel1_ard"
             ],
             "minItems": 1,
-            "maxItems": 1
+            "maxItems": 1,
+            "markdown_file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/stats_look.md"
         },
         {
             "id": "mean_value_calculation",
@@ -45,7 +48,8 @@
                 "sentinel1_ard"
             ],
             "minItems": 1,
-            "maxItems": 10
+            "maxItems": 10,
+            "markdown_file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/mean_value_calculation.md"
         }
     ]
 }
