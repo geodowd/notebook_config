@@ -4,19 +4,30 @@
             "id": "ndvi_calculation",
             "file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/ndvi_calculation.ipynb",
             "label": "NDVI Calculation Notebook",
-            "description": "Performs NDVI calculation on the selected COG asset."
+            "description": "Performs NDVI calculation on the selected COG asset.",
+            "collections": [
+                "sentinel2_ard"
+            ]
         },
         {
             "id": "cog_preview",
             "file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/cog_preview.ipynb",
             "label": "COG Preview Notebook",
-            "description": "Previews the selected COG asset."
+            "description": "Previews the selected COG asset.",
+            "collections": [
+                "sentinel2_ard",
+                "sentinel1_ard"
+            ]
         },
         {
             "id": "stats_look",
             "file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/stats_look.ipynb",
             "label": "View stats",
-            "description": "Look at some stats"
+            "description": "Look at some stats",
+            "collections": [
+                "sentinel2_ard",
+                "sentinel1_ard"
+            ]
         }
     ]
 }
