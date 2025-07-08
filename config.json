@@ -38,8 +38,8 @@
         {
             "id": "multiple_cogs",
             "file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/cog_preview.ipynb",
-            "label": "COG Preview Notebook",
-            "description": "Previews the selected COG asset.",
+            "label": "Multiple COG Preview Notebook",
+            "description": "Previews the selected COG assets.",
             "collections": [
                 "sentinel2_ard",
                 "sentinel1_ard"
