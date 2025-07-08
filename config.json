@@ -7,7 +7,9 @@
             "description": "Performs NDVI calculation on the selected COG asset.",
             "collections": [
                 "sentinel2_ard"
-            ]
+            ],
+            "minItems": 1,
+            "maxItems": 1
         },
         {
             "id": "cog_preview",
@@ -17,7 +19,9 @@
             "collections": [
                 "sentinel2_ard",
                 "sentinel1_ard"
-            ]
+            ],
+            "minItems": 1,
+            "maxItems": 1
         },
         {
             "id": "stats_look",
@@ -27,7 +31,21 @@
             "collections": [
                 "sentinel2_ard",
                 "sentinel1_ard"
-            ]
+            ],
+            "minItems": 1,
+            "maxItems": 1
+        },
+        {
+            "id": "multiple_cogs",
+            "file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/cog_preview.ipynb",
+            "label": "COG Preview Notebook",
+            "description": "Previews the selected COG asset.",
+            "collections": [
+                "sentinel2_ard",
+                "sentinel1_ard"
+            ],
+            "minItems": 1,
+            "maxItems": 10
         }
     ]
 }
