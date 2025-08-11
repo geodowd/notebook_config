@@ -1,68 +1,125 @@
-{
-    "notebooks": [
+[
+    {
+        "type": "notebook",
+        "id": "ndvi_calculation",
+        "file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/ndvi_calculation.ipynb",
+        "title": "NDVI Calculation Notebook",
+        "description": "Performs NDVI calculation on the selected COG asset.",
+        "collections": [
+            "sentinel2_ard"
+        ],
+        "minItems": 1,
+        "maxItems": 1,
+        "markdown_file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/ndvi_calculation.md",
+        "inputSpec": {
+            "cog_url": "singleUrl",
+            "bbox": "bbox"
+        }
+    },
+    {
+        "type": "notebook",
+        "id": "cog_preview",
+        "file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/cog_preview.ipynb",
+        "title": "COG Preview Notebook",
+        "description": "Previews the selected COG asset.",
+        "collections": [
+            "sentinel2_ard",
+            "sentinel1_ard"
+        ],
+        "minItems": 1,
+        "maxItems": 1,
+        "markdown_file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/cog_preview.md",
+        "inputSpec": {
+            "cog_url": "singleUrl"
+        }
+    },
+    {
+        "type": "notebook",
+        "id": "stats_look",
+        "file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/stats_look.ipynb",
+        "title": "View stats",
+        "description": "Look at some stats",
+        "collections": [
+            "sentinel2_ard",
+            "sentinel1_ard"
+        ],
+        "minItems": 1,
+        "maxItems": 1,
+        "markdown_file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/stats_look.md",
+        "inputSpec": {
+            "cog_url": "singleUrl"
+        }
+    },
+    {
+        "type": "notebook",
+        "id": "mean_value_calculation",
+        "file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/mean_value_calculation.ipynb",
+        "title": "Mean Value Calculation Notebook",
+        "description": "Calculates the mean value of the selected COG assets.",
+        "collections": [
+            "sentinel2_ard",
+            "sentinel1_ard"
+        ],
+        "minItems": 1,
+        "maxItems": 10,
+        "markdown_file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/mean_value_calculation.md",
+        "inputSpec": {
+            "cogs": "urlList"
+        },
         {
-            "id": "ndvi_calculation",
-            "file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/ndvi_calculation.ipynb",
-            "label": "NDVI Calculation Notebook",
-            "description": "Performs NDVI calculation on the selected COG asset.",
-            "collections": [
-                "sentinel2_ard"
-            ],
-            "minItems": 1,
-            "maxItems": 1,
-            "markdown_file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/ndvi_calculation.md",
-            "inputSpec": {
-                "cog_url": "singleUrl",
-                "bbox": "bbox"
+            "type": "workflow",
+            "title": "Land Surface Temperature (LST) - Monthly (avg), Day & Night",
+            "description": "This workflow provides monthly average daytime and nighttime land surface temperature observations for specified assets across the World, derived from the Sentinel Sea and Land Surface Temperature Radiometer (SLSTR). Data is available from 1st January 2016 onwards.",
+            "workflow_name": "lst-min-max",
+            "inputs": {
+                "start_date": {
+                    "label": "Select the start date",
+                    "type": "date",
+                    "default": "2022-01-01"
+                },
+                "end_date": {
+                    "label": "Select the end date",
+                    "type": "date",
+                    "default": "2022-12-31"
+                },
+                "output_name": {
+                    "label": "Output name prefix",
+                    "type": "text",
+                    "default": "lst_analysis",
+                    "placeholder": "Enter a name for your output files"
+                }
             }
         },
         {
-            "id": "cog_preview",
-            "file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/cog_preview.ipynb",
-            "label": "COG Preview Notebook",
-            "description": "Previews the selected COG asset.",
-            "collections": [
-                "sentinel2_ard",
-                "sentinel1_ard"
-            ],
-            "minItems": 1,
-            "maxItems": 1,
-            "markdown_file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/cog_preview.md",
-            "inputSpec": {
-                "cog_url": "singleUrl"
-            }
+            "type": "workflow",
+            "title": "Echo",
+            "description": "This workflow echoes the input assets",
+            "user_inputs": {
+                "a": {
+                    "type": "text",
+                    "label": "Text input"
+                },
+                "b": {
+                    "type": "text",
+                    "label": "Complex input"
+                },
+                "c": {
+                    "type": "text",
+                    "label": "Bbox input"
+                }
+            },
+            "workflow_name": "echo"
         },
         {
-            "id": "stats_look",
-            "file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/stats_look.ipynb",
-            "label": "View stats",
-            "description": "Look at some stats",
-            "collections": [
-                "sentinel2_ard",
-                "sentinel1_ard"
-            ],
-            "minItems": 1,
-            "maxItems": 1,
-            "markdown_file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/stats_look.md",
-            "inputSpec": {
-                "cog_url": "singleUrl"
-            }
-        },
-        {
-            "id": "mean_value_calculation",
-            "file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/mean_value_calculation.ipynb",
-            "label": "Mean Value Calculation Notebook",
-            "description": "Calculates the mean value of the selected COG assets.",
-            "collections": [
-                "sentinel2_ard",
-                "sentinel1_ard"
-            ],
-            "minItems": 1,
-            "maxItems": 10,
-            "markdown_file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/mean_value_calculation.md",
-            "inputSpec": {
-                "cogs": "urlList"
-            }
+            "type": "workflow",
+            "title": "Token Access",
+            "description": "This workflow tests the token access to the API",
+            "user_inputs": {
+                "workspace": {
+                    "type": "text",
+                    "label": "Workspace"
+                }
+            },
+            "workflow_name": "token-access-2"
         }
     ]
-}
