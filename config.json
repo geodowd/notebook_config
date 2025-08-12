@@ -102,6 +102,10 @@
         "type": "workflow",
         "title": "Echo",
         "description": "This workflow echoes the input assets",
+        "collections": [
+            "sentinel2_ard",
+            "sentinel1_ard"
+        ],
         "inputs": {
             "a": {
                 "type": "text",
@@ -122,6 +126,10 @@
         "type": "workflow",
         "title": "Token Access",
         "description": "This workflow tests the token access to the API",
+        "collections": [
+            "sentinel2_ard",
+            "sentinel1_ard"
+        ],
         "inputs": {
             "workspace": {
                 "type": "text",
