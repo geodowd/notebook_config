@@ -65,61 +65,62 @@
         "markdown_file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/mean_value_calculation.md",
         "inputSpec": {
             "cogs": "urlList"
-        },
-        {
-            "type": "workflow",
-            "title": "Land Surface Temperature (LST) - Monthly (avg), Day & Night",
-            "description": "This workflow provides monthly average daytime and nighttime land surface temperature observations for specified assets across the World, derived from the Sentinel Sea and Land Surface Temperature Radiometer (SLSTR). Data is available from 1st January 2016 onwards.",
-            "workflow_name": "lst-min-max",
-            "inputs": {
-                "start_date": {
-                    "label": "Select the start date",
-                    "type": "date",
-                    "default": "2022-01-01"
-                },
-                "end_date": {
-                    "label": "Select the end date",
-                    "type": "date",
-                    "default": "2022-12-31"
-                },
-                "output_name": {
-                    "label": "Output name prefix",
-                    "type": "text",
-                    "default": "lst_analysis",
-                    "placeholder": "Enter a name for your output files"
-                }
+        }
+    },
+    {
+        "type": "workflow",
+        "title": "Land Surface Temperature (LST) - Monthly (avg), Day & Night",
+        "description": "This workflow provides monthly average daytime and nighttime land surface temperature observations for specified assets across the World, derived from the Sentinel Sea and Land Surface Temperature Radiometer (SLSTR). Data is available from 1st January 2016 onwards.",
+        "workflow_name": "lst-min-max",
+        "inputs": {
+            "start_date": {
+                "label": "Select the start date",
+                "type": "date",
+                "default": "2022-01-01"
+            },
+            "end_date": {
+                "label": "Select the end date",
+                "type": "date",
+                "default": "2022-12-31"
+            },
+            "output_name": {
+                "label": "Output name prefix",
+                "type": "text",
+                "default": "lst_analysis",
+                "placeholder": "Enter a name for your output files"
+            }
+        }
+    },
+    {
+        "type": "workflow",
+        "title": "Echo",
+        "description": "This workflow echoes the input assets",
+        "user_inputs": {
+            "a": {
+                "type": "text",
+                "label": "Text input"
+            },
+            "b": {
+                "type": "text",
+                "label": "Complex input"
+            },
+            "c": {
+                "type": "text",
+                "label": "Bbox input"
             }
         },
-        {
-            "type": "workflow",
-            "title": "Echo",
-            "description": "This workflow echoes the input assets",
-            "user_inputs": {
-                "a": {
-                    "type": "text",
-                    "label": "Text input"
-                },
-                "b": {
-                    "type": "text",
-                    "label": "Complex input"
-                },
-                "c": {
-                    "type": "text",
-                    "label": "Bbox input"
-                }
-            },
-            "workflow_name": "echo"
+        "workflow_name": "echo"
+    },
+    {
+        "type": "workflow",
+        "title": "Token Access",
+        "description": "This workflow tests the token access to the API",
+        "user_inputs": {
+            "workspace": {
+                "type": "text",
+                "label": "Workspace"
+            }
         },
-        {
-            "type": "workflow",
-            "title": "Token Access",
-            "description": "This workflow tests the token access to the API",
-            "user_inputs": {
-                "workspace": {
-                    "type": "text",
-                    "label": "Workspace"
-                }
-            },
-            "workflow_name": "token-access-2"
-        }
-    ]
+        "workflow_name": "token-access-2"
+    }
+]
