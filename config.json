@@ -72,6 +72,13 @@
         "title": "Land Surface Temperature (LST) - Monthly (avg), Day & Night",
         "description": "This workflow provides monthly average daytime and nighttime land surface temperature observations for specified assets across the World, derived from the Sentinel Sea and Land Surface Temperature Radiometer (SLSTR). Data is available from 1st January 2016 onwards.",
         "workflow_name": "lst-min-max",
+        "collections": [
+            "eocis-lst-s3b-night",
+            "eocis-lst-s3b-day",
+            "eocis-lst-s3a-night",
+            "eocis-lst-s3a-day",
+            "eocis-lst-day"
+        ],
         "inputs": {
             "start_date": {
                 "label": "Select the start date",
@@ -95,7 +102,7 @@
         "type": "workflow",
         "title": "Echo",
         "description": "This workflow echoes the input assets",
-        "user_inputs": {
+        "inputs": {
             "a": {
                 "type": "text",
                 "label": "Text input"
@@ -115,7 +122,7 @@
         "type": "workflow",
         "title": "Token Access",
         "description": "This workflow tests the token access to the API",
-        "user_inputs": {
+        "inputs": {
             "workspace": {
                 "type": "text",
                 "label": "Workspace"
