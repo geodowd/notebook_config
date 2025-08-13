@@ -15,7 +15,6 @@
         }
     },
     {
-    {
         "type": "workflow",
         "title": "BBOX Workflow",
         "description": "This workflow clips a dataset with a bbox.",
@@ -28,11 +27,13 @@
                 "label": "COP to clip from",
                 "type": "dataset"
             },
-            "bbox":{
-              "label": "Bounding Box",
-              "type": "bbox"
+            "bbox": {
+                "label": "Bounding Box",
+                "type": "bbox"
+            }
         }
     },
+    {
         "type": "notebook",
         "id": "ndvi_calculation",
         "file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/ndvi_calculation.ipynb",
