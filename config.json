@@ -1,5 +1,20 @@
 [
     {
+        "type": "workflow",
+        "title": "NDVI Calculation",
+        "description": "This workflow calculates the NDVI of the selected assets.",
+        "workflow_name": "ndvi-workflow",
+        "collections": [
+            "sentinel2_ard"
+        ],
+        "inputs": {
+            "input_cog": {
+                "label": "COG to calculate NDVI from",
+                "type": "dataset"
+            }
+        }
+    },
+    {
         "type": "notebook",
         "id": "ndvi_calculation",
         "file": "https://raw.githubusercontent.com/geodowd/notebook_config/refs/heads/main/notebooks/example/ndvi_calculation.ipynb",
