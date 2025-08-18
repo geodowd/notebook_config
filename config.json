@@ -11,6 +11,10 @@
             "input_cog": {
                 "label": "COG to calculate NDVI from",
                 "type": "dataset"
+            },
+             "bbox": {
+                "label": "Bounding Box",
+                "type": "bbox"
             }
         }
     },
